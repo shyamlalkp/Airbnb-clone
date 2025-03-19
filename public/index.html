@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb Clone</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body class="overflow-visible">
+    <header>
+      <!-- Navbar -->
+      <div
+        class="grid grid-cols-3 px-16 z-50 left-0 right-0 h-20 border-b-[1px] items-center fixed top-0 bg-white"
+      >
+        <img src="static/airbnb-logo.png" alt="" class="h-16 w-28" />
+        <div
+          class="flex justify-evenly items-center border rounded-full shadow-md h-12 w-96"
+        >
+          <button class="border-r-2 text-sm font-medium px-4">Anywhere</button>
+          <button class="border-r-2 text-sm font-medium px-4">Any week</button>
+          <button class="text-gray-500 text-sm font-medium px-4">
+            Add guests
+          </button>
+          <i
+            class="fa-solid fa-magnifying-glass bg-red-500 text-white rounded-full p-2 text-lg"
+          ></i>
+        </div>
+        <div class="flex items-center justify-end gap-8">
+          <button class="font-medium text-sm">Airbnb your home</button>
+          <span class="material-symbols-outlined"> language </span>
+          <div
+            class="flex justify-evenly items-center gap-2 rounded-full border shadow-md h-10 w-20 py-2 pr-1.25 pl-2"
+          >
+            <i class="fa-solid fa-bars"></i>
+            <button class="">
+              <img
+                src="static/IMG_4031 (1).jpg"
+                class="h-8 w-7 py-0.3 rounded-full"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Catagory bar -->
+      <div
+        class="flex items-center justify-center h-24 w-screen space-x-5 z-40 fixed top-16 bg-white"
+      >
+        <div class="flex items-center justify-between space-x-8">
+          <div
+            class="flex-col items-center text-gray-500 hover:text-black pl-16 gap-2"
+          >
+            <img src="static/type11.jpeg" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">OMG</p>
+          </div>
+          <div
+            class="flex-col items-center text-gray-500 hover:text-black gap-2"
+          >
+            <img src="static/type4.jpeg" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Countryside</p>
+          </div>
+          <div
+            class="flex-col items-center text-gray-500 hover:text-black gap-2"
+          >
+            <img src="static/type8.jpeg" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Rooms</p>
+          </div>
+          <div
+            class="flex-col items-center text-gray-500 hover:text-black gap-2"
+          >
+            <img src="static/type6.jpeg" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Farms</p>
+          </div>
+          <div
+            class="flex-col items-center text-gray-500 hover:text-black gap-2"
+          >
+            <img src="static/type7.jpeg" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Amazing views</p>
+          </div>
+          <div
+            class="flex-col items-center text-gray-500 hover:text-black gap-2"
+          >
+            <img src="static/type1.jpeg" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Amazing pools</p>
+          </div>
+          <div
+            class="flex-col items-center text-gray-500 hover:text-black gap-2"
+          >
+            <img src="static/type10.jpeg" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Beachfront</p>
+          </div>
+          <div
+            class="flex-col items-center text-gray-500 hover:text-black gap-2"
+          >
+            <img src="static/type9.jpeg" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Lakefront</p>
+          </div>
+          <div
+            class="flex-col items-center text-gray-500 hover:text-black gap-2"
+          >
+            <img src="static/type2.jpeg" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Pools play</p>
+          </div>
+          <div
+            class="flex-col items-center text-gray-500 hover:text-black gap-2"
+          >
+            <img src="static/type5.jpeg" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Surfing</p>
+          </div>
+        </div>
+
+        <span class="material-symbols-outlined pl-4"> arrow_circle_right </span>
+        <div
+          class="flex justify-center items-center rounded-xl shadow-md w-24 h-12 border"
+        >
+          <span class="material-symbols-outlined"> tune </span>
+          <p class="text-xs font-medium pl-2">Filters</p>
+        </div>
+        <div
+          class="flex rounded-xl w-56 h-12 justify-around items-center shadow-md border"
+        >
+          <p class="text-xs font-medium">Display total before taxes</p>
+          <i class="fa-solid fa-toggle-off fa-2xl" style="color: #b5b7ba"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- hotel -->
+    <main class="mt-48 mx-10">
+      <div
+        class="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 mx-14 justify-between"
+      >
+        <div class="flex flex-col h-96 w-72">
+          <img
+            src="./static/bnb1.png"
+            alt=""
+            class="h-64 w-72 rounded-xl object-cover"
+          />
+          <div class="flex justify-between mt-2">
+            <p class="font-medium">Shinano, Kamiminochi District, Japan</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p>4.94</p>
+            </div>
+          </div>
+          <p class="text-gray-500">6,546 kilometres away</p>
+          <p class="text-gray-500">26-31 Mar</p>
+          <div class="flex items-center">
+            <p class="font-bold">₹42,697</p>
+            <p>night</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="./static/bnb2.png" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="font-medium">Jibhi, India</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p>4.89</p>
+            </div>
+          </div>
+          <p class="text-gray-500">2,069 kilometres away</p>
+          <p class="text-gray-500">1-6 July</p>
+          <div class="flex items-center">
+            <p class="font-bold">₹6,846</p>
+            <p>night</p>
+          </div>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./static/bnb3.png" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="font-medium">Jibhi, India</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p>4.95</p>
+            </div>
+          </div>
+          <p class="text-gray-500">2,068 kilometres away</p>
+          <p class="text-gray-500">27 Mar-1 Apr</p>
+          <div class="flex items-center">
+            <p class="font-bold">₹11,982</p>
+            <p>night</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="./static/bnb4.png" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="font-medium">Sainj, India</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p>4.93</p>
+            </div>
+          </div>
+          <p class="text-gray-500">2,089 kilometres away</p>
+          <p class="text-gray-500">17-22 Mar</p>
+          <div class="flex items-center">
+            <p class="font-bold">₹2,396</p>
+            <p>night</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="./static/bnb5.png" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="font-medium">London, UK</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p>4.9</p>
+            </div>
+          </div>
+          <p class="text-gray-500">Stay with Genevieve. Web/Graphic designer</p>
+          <p class="text-gray-500">31 Mar-5 Apr</p>
+          <div class="flex items-center">
+            <p class="font-bold">₹5,819</p>
+            <p>night</p>
+          </div>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./static/bnb6.png" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="font-medium">Levallois-Perret, France</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p>4.94</p>
+            </div>
+          </div>
+          <p class="text-gray-500">Stay with Annie, Hrd atretreat</p>
+          <p class="text-gray-500">26 Apr-1 May</p>
+          <div class="flex items-center">
+            <p class="font-bold">₹8,609</p>
+            <p>night</p>
+          </div>
+        </div>
+        <div class="flex flex-col h-96 w-72">
+          <img src="./static/bnb7.png" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="font-medium">London, UK</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p>4.86</p>
+            </div>
+          </div>
+          <p class="text-gray-500">Stay with Sara, Envirnmental activist</p>
+          <p class="text-gray-500">11-16 May</p>
+          <div class="flex items-center">
+            <p class="font-bold">₹9,377</p>
+            <p>night</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="./static/bnb8.png" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="font-medium">Santa Cruz de Tenerife, Spain</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p>4.87</p>
+            </div>
+          </div>
+          <p class="text-gray-500">Stay with Joel, Hosting for 6 years</p>
+          <p class="text-gray-500">23-28 Jun</p>
+          <div class="flex items-center">
+            <p class="font-bold">₹6,843</p>
+            <p>night</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="./static/bnb9.png" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="font-medium">Kuta Utara, Indonesia</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p>4.94</p>
+            </div>
+          </div>
+          <p class="text-gray-500">Stay with Jojo, Hosting for 9 years</p>
+          <p class="text-gray-500">6-11 May</p>
+          <div class="flex items-center">
+            <p class="font-bold">₹4,008</p>
+            <p>night</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
