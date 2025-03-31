@@ -18,11 +18,11 @@
     <header>
       <!-- Navbar -->
       <div
-        class="grid grid-cols-3 px-4 md:px-16 z-50 left-0 right-0 h-20 border-b-[1px] border-gray-300 items-center fixed top-0 bg-white"
+        class="flex items-center justify-between border-b-[1px] md:px-16 z-50 left-0 right-0 h-20 border-gray-300 fixed top-0 bg-white"
       >
-        <img src="static/airbnb-logo.png" alt="" class="h-16 w-auto" />
+        <img src="static/airbnb-logo.png" alt="" class="h-10 md:h-16 w-auto" />
         <div
-          class="flex justify-evenly items-center border rounded-full shadow-md h-12 w-96"
+          class="hidden md:flex justify-evenly items-center border rounded-full shadow-md h-12 w-96"
         >
           <button class="border-r-2 text-sm font-medium px-4">Anywhere</button>
           <button class="border-r-2 text-sm font-medium px-4">Any week</button>
@@ -33,6 +33,10 @@
             class="fa-solid fa-magnifying-glass bg-red-500 text-white rounded-full p-2 text-lg text-"
           ></i>
         </div>
+        <button class="md:hidden p-2 border rounded-full shadow-md">
+          <i class="fa-solid fa-magnifying-glass text-red-500 text-lg"></i>
+        </button>
+
         <div class="flex items-center justify-end gap-8">
           <button class="hidden md:block font-medium text-sm">
             Airbnb your home
@@ -292,6 +296,23 @@
           <p class="text-gray-500">6-11 May</p>
           <div class="flex items-center">
             <p class="font-bold">₹4,008</p>
+            <p>night</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col h-96 w-72">
+          <img src="./static/bnb5.png" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="font-medium">London, UK</p>
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <p>4.9</p>
+            </div>
+          </div>
+          <p class="text-gray-500">Stay with Genevieve. Web/Graphic designer</p>
+          <p class="text-gray-500">31 Mar-5 Apr</p>
+          <div class="flex items-center">
+            <p class="font-bold">₹5,819</p>
             <p>night</p>
           </div>
         </div>
